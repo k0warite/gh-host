@@ -19,6 +19,6 @@
         "test/",
         "public/",
         "lib/",
-        "src/*.js"
+        "dist/"
     ]
 }

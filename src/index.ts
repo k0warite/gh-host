@@ -1,7 +1,7 @@
 import type { Callback, Module } from '../types/index';
 import fetch, { Response } from 'node-fetch';
 
-const BASE_URL = 'https://github.com/kowarite/gh-host/raw/master/public/';
+const BASE_URL = 'https://github.com/kowarite/gh-host/raw/master/lib/';
 
 export function loader(module: Module, cb: Callback) {
     fetch(`${BASE_URL}/${module}`).then((value: Response) => {
