@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "rootDir": "src/",
+        "target": "ES2020",
+        "module": "ESNEXT",
+        "noImplicitAny": true,
+        "outDir": "dist/",
+        "removeComments": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true
+    },
+
+    "include": ["src/*.ts"],
+    "exclude": [
+        "example/",
+        "node_modules/",
+        "test/",
+        "public/",
+        "lib/",
+        "src/*.js"
+    ]
+}
