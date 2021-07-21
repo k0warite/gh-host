@@ -1,21 +1,27 @@
 {
     "name": "gh-host",
     "version": "1.0.0",
-    "author": "kowarite",
+    "author": "k0warite",
     "license": "MIT",
     "repository": {
         "type": "git"
     },
     "main": "lib/index.js",
     "scripts": {
-        "test": "npx mocha",
-        "build": "npx tsc"
+        "mocha-test": "npx mocha",
+        "html-test": "python server.py",
+        "deno-test": "deno --quiet --allow-all test",
+
+        "ts-build": "rm -rf dist/*.js && npx tsc",
+        "es-build": "node esbuild.js",
+        "build": "npm run ts-build && npm run es-build"
     },
     "keywords": [],
     "description": "A collection of JS library hosted on GitHub",
     "type": "module",
     "devDependencies": {
         "@types/node-fetch": "^2.5.11",
+        "esbuild": "^0.12.15",
         "mocha": "^9.0.2",
         "typescript": "^4.3.5"
     },

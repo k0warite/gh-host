@@ -1,5 +1,4 @@
 import type { Callback, Module } from '../types/index';
-import fetch, { Response } from 'node-fetch';
 
 const BASE_URL = 'https://github.com/k0warite/gh-host/raw/main/lib/';
 
